@@ -53,17 +53,23 @@ button {
   border-right: 1px solid rgba(6, 20, 38, 0.12);
 }
 
-.brand-mark {
+.brand-lockup {
   display: grid;
-  place-items: center;
-  width: 52px;
-  height: 52px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  background: var(--white);
-  color: var(--navy-900);
-  font-weight: 900;
-  font-size: 27px;
-  border-radius: 8px;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+}
+
+.brand-logo {
+  width: 54px;
+  height: 54px;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.06)),
+    rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
+  border-radius: 12px;
 }
 
 .eyebrow {
@@ -82,7 +88,7 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(36px, 6vw, 54px);
+  font-size: clamp(32px, 5vw, 48px);
   line-height: 1;
 }
 
@@ -579,6 +585,16 @@ legend {
   .brand-panel {
     min-height: auto;
     padding: 24px;
+  }
+
+  .brand-lockup {
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+
+  .brand-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
   }
 
   .step-list {

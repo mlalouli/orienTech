@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Orientech logo</title>
+  <desc id="desc">A compass-inspired academic orientation mark with a rising path.</desc>
+  <defs>
+    <linearGradient id="sky" x1="18" x2="106" y1="18" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5eead4"/>
+      <stop offset=".48" stop-color="#2b6fd6"/>
+      <stop offset="1" stop-color="#102b4d"/>
+    </linearGradient>
+    <linearGradient id="page" x1="36" x2="96" y1="52" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#061426"/>
+  <circle cx="64" cy="64" r="45" fill="url(#sky)" opacity=".96"/>
+  <path d="M32 82c13-13 24-20 35-20 9 0 17 4 29 14" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="8"/>
+  <path d="M47 89c10-9 18-13 26-13 7 0 13 2 22 8" fill="none" stroke="#5eead4" stroke-linecap="round" stroke-width="5"/>
+  <path d="M64 23l12 34 34 12-34 12-12 34-12-34-34-12 34-12z" fill="#ffffff" opacity=".18"/>
+  <path d="M64 31l8 26 26 8-26 8-8 26-8-26-26-8 26-8z" fill="#ffffff"/>
+  <path d="M64 46l5 16 16 5-16 5-5 16-5-16-16-5 16-5z" fill="#102b4d"/>
+  <path d="M40 93h48c4 0 7-3 7-7V58c-8 4-17 6-26 6s-19-2-29-7z" fill="url(#page)"/>
+  <path d="M40 57c10 5 20 7 29 7s18-2 26-6v-8c-8 4-17 6-26 6s-19-2-29-7z" fill="#ffffff"/>
+  <path d="M55 79h27M52 88h24" stroke="#2b6fd6" stroke-linecap="round" stroke-width="4"/>
+</svg>

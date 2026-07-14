@@ -1,0 +1,96 @@
+---
+import logoUrl from '../assets/orientech-logo.svg';
+import OrientationApp from '../components/OrientationApp.jsx';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Orien Tech is a premium academic orientation experience built with Astro and React."
+    />
+    <title>Orien Tech | Academic orientation intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="brand-panel" aria-label="Orien Tech overview">
+        <span class="brand-glow brand-glow-a" aria-hidden="true"></span>
+        <span class="brand-glow brand-glow-b" aria-hidden="true"></span>
+
+        <div class="brand-lockup">
+          <img class="brand-logo" src={logoUrl} alt="Orien Tech logo" />
+          <div>
+            <p class="eyebrow">School orientation recommender</p>
+            <h1>Orien Tech</h1>
+          </div>
+        </div>
+
+        <p class="intro">
+          A premium academic guidance experience that turns student profiles, marks, and interests into confident next-step recommendations.
+        </p>
+
+        <div class="kpi-grid" aria-label="Platform highlights">
+          <article class="kpi-card">
+            <strong>6-step</strong>
+            <span>guided intake</span>
+          </article>
+          <article class="kpi-card">
+            <strong>AI-ready</strong>
+            <span>adaptive questions</span>
+          </article>
+          <article class="kpi-card">
+            <strong>Mobile-first</strong>
+            <span>responsive flow</span>
+          </article>
+        </div>
+
+        <div class="progress-card">
+          <div class="progress-header">
+            <span>Experience design</span>
+            <strong>Premium SaaS UI</strong>
+          </div>
+          <p class="progress-copy">
+            The new layout keeps the orientation flow calm, legible, and responsive across screen sizes.
+          </p>
+        </div>
+
+        <div class="signal-panel">
+          <span class="signal-dot"></span>
+          <p>Orientation engine ready for a high-trust student profile.</p>
+        </div>
+      </aside>
+
+      <section class="work-area" aria-live="polite">
+        <div class="workspace-shell">
+          <header class="workspace-header">
+            <div>
+              <p class="eyebrow">Astro + React cockpit</p>
+              <h2>High-fidelity intake for better academic decisions.</h2>
+              <p>
+                Capture the student story, weigh academic signals, and surface school options through a polished product flow.
+              </p>
+            </div>
+
+            <div class="header-badges" aria-label="Page highlights">
+              <span class="badge">Accessible</span>
+              <span class="badge">Responsive</span>
+              <span class="badge">Premium UI</span>
+            </div>
+          </header>
+
+          <OrientationApp client:load />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
